@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - Repositories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        nav {
+            background-color: #161b22;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #79c0ff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .repo-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .repo {
+            background-color: #161b22;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            transition: transform 0.3s;
+        }
+
+        .repo:hover {
+            transform: translateY(-5px);
+        }
+
+        .repo h3 {
+            color: #58a6ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .repo p {
+            color: #8b949e;
+            margin-bottom: 1rem;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 2rem;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #238636;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">GitHub</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signin.html">Sign Up</a>
+            <a href="profile.html">Profile</a>
+            <a href="repo.html">Repositories</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Your Repositories</h2>
+        <div class="repo-list">
+            <div class="repo">
+                <h3>project-1</h3>
+                <p>A sample project for learning web development.</p>
+                <div class="repo-stats">
+                    <span>Language: JavaScript</span>
+                    <span>Stars: 42</span>
+                    <span>Forks: 12</span>
+                </div>
+                <a href="#" class="btn">View Repository</a>
+            </div>
+            <div class="repo">
+                <h3>project-2</h3>
+                <p>An open-source tool for automation.</p>
+                <div class="repo-stats">
+                    <span>Language: Python</span>
+                    <span>Stars: 28</span>
+                    <span>Forks: 8</span>
+                </div>
+                <a href="#" class="btn">View Repository</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
